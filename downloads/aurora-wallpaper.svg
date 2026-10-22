@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="2160" viewBox="0 0 3840 2160">
+  <defs>
+    <radialGradient id="a" cx="22%" cy="18%" r="60%">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b" cx="82%" cy="22%" r="55%">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="c" cx="58%" cy="100%" r="50%">
+      <stop offset="0" stop-color="#f472b6" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="38%" cy="32%" r="70%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".22" stop-color="#c4b5fd"/>
+      <stop offset=".65" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="96" height="96" patternUnits="userSpaceOnUse">
+      <path d="M96 0H0v96" fill="none" stroke="#ffffff" stroke-opacity=".06" stroke-width="2"/>
+    </pattern>
+    <radialGradient id="fade" cx="50%" cy="45%" r="65%">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="m"><rect width="3840" height="2160" fill="url(#fade)"/></mask>
+  </defs>
+
+  <rect width="3840" height="2160" fill="#06070d"/>
+  <rect width="3840" height="2160" fill="url(#a)"/>
+  <rect width="3840" height="2160" fill="url(#b)"/>
+  <rect width="3840" height="2160" fill="url(#c)"/>
+  <rect width="3840" height="2160" fill="url(#grid)" mask="url(#m)"/>
+
+  <g fill="none" stroke="#ffffff">
+    <ellipse cx="1920" cy="1180" rx="1500" ry="360" stroke-opacity=".14" stroke-width="3"/>
+    <ellipse cx="1920" cy="1180" rx="1080" ry="250" stroke-opacity=".1" stroke-width="2"/>
+  </g>
+  <circle cx="1920" cy="1080" r="620" fill="url(#glow)"/>
+  <circle cx="1920" cy="1080" r="250" fill="url(#orb)"/>
+  <circle cx="3420" cy="1180" r="10" fill="#22d3ee"/>
+  <circle cx="560" cy="1290" r="7" fill="#f472b6"/>
+</svg>
